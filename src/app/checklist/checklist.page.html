@@ -18,7 +18,7 @@
 <ion-content> 
   <ion-list lines="none">
     <ion-item-sliding *ngFor="let item of checklist.items">
-      <ion-item color="success" *ngFor="let item of checklist.items">
+      <ion-item color="success">
         <ion-label>{{item.title}}</ion-label>
         <ion-checkbox color="light" [checked]="item.checked" (ionChange)="toggleItem(item)"></ion-checkbox>
       </ion-item>
